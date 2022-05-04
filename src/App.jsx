@@ -6,7 +6,7 @@ import Register from './page/Register';
 
 function App() {
     return (
-        <div className=" dark:bg-gray-900 dark:text-white">
+        <div className="dark:bg-gray-900 dark:text-white">
             <Routes>
                 <Route index element={<Home />} />
                 <Route path="/login" element={<Login />} />

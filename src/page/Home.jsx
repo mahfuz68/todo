@@ -4,7 +4,7 @@ import HomeNavbar from '../component/HomeNavbar';
 
 export default function Home() {
     return (
-        <div className="h-full w-full dark:bg-gray-900">
+        <div className="h-screen w-full dark:bg-gray-900">
             <HomeNavbar />
             <div className="my-36 dark:text-white text-center">
                 <h1 className="text-3xl md:text-5xl font-bold">Tsks, just tasks.</h1>

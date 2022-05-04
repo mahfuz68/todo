@@ -25,6 +25,7 @@ export default function Register() {
                     </p>
                 </div>
             </div>
+            <div className="h-screen" />
         </div>
     );
 }
