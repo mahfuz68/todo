@@ -4,13 +4,13 @@ import HomeNavbar from '../component/HomeNavbar';
 
 export default function Home() {
     return (
-        <div className="h-full dark:bg-gray-900">
+        <div className="h-full w-full dark:bg-gray-900">
             <HomeNavbar />
             <div className="my-36 dark:text-white text-center">
-                <h1 className="text-5xl  lg:text-4xl font-bold">Tsks, just tasks.</h1>
-                <div className="md:w-1/2 lg:w-1/5 xl:w-[315px] text-center mx-auto">
+                <h1 className=" text-5xl lg:text-4xl font-bold">Tsks, just tasks.</h1>
+                <div className="w-1/2 lg:w-1/5 xl:w-[315px] text-center mx-auto">
                     <p className="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div className="flex flex-wrap gap-y-4 flex-col lg:justify-between lg:flex-row ">
+                    <div className="flex flex-wrap gap-y-4 flex-col md:justify-between md:flex-row ">
                         <button
                             type="button"
                             className=" button-primary bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500"
