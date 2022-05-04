@@ -7,9 +7,11 @@ export default function Home() {
         <div className="h-full w-full dark:bg-gray-900">
             <HomeNavbar />
             <div className="my-36 dark:text-white text-center">
-                <h1 className=" text-5xl lg:text-4xl font-bold">Tsks, just tasks.</h1>
-                <div className="w-1/2 lg:w-1/5 xl:w-[315px] text-center mx-auto">
-                    <p className="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1 className="text-2xl md:text-5xl font-bold">Tsks, just tasks.</h1>
+                <div className="md:w-1/2 lg:w-1/5 xl:w-[315px] text-center mx-auto">
+                    <p className="my-4 mx-4 lg:mx-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
                     <div className="flex flex-wrap gap-y-4 flex-col md:justify-between md:flex-row ">
                         <button
                             type="button"
