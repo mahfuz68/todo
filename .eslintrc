@@ -21,6 +21,7 @@
     "jest": true
   },
   "rules": {
+    "comma-dangle": ["error", "never"],
     "no-shadow": 0,
     "react/react-in-jsx-scope": 0,
     "react-hooks/rules-of-hooks": "error",
