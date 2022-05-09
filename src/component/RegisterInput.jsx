@@ -89,7 +89,7 @@ export default function RegisterInput() {
             >
                 Sign up
             </button>
-            <div>{error && <p>{error}</p>}</div>
+            <div className="my-2 text-red-500 text-sm">{error && <p>{error}</p>}</div>
         </div>
     );
 }
