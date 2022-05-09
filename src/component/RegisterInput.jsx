@@ -17,8 +17,9 @@ export default function RegisterInput() {
         e.preventDefault();
 
         if (password !== confirmPassword) {
-            setError('Password does not match');
+            return setError('Password does not match');
         }
+
         try {
             setError('');
             setLoading(true);
