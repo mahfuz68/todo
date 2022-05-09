@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 export default function SocialRegister() {
+    const [loading, setLoading] = useState(false);
+    const { loginWithGoogle, loginWithFacebook } = useAuth();
+
+    const navigate = useNavigate();
+
+    // handle login with google function
+    const handleGoogleLogin = async (e) => {
+        setLoading(true);
+        e.preventDefault();
+        await loginWithGoogle();
+        navigate('/');
+    };
+
+    // handle facebook login function
+    const handleFacebookLogin = async (e) => {
+        setLoading(true);
+        e.preventDefault();
+        await loginWithFacebook();
+        navigate('/');
+    };
+
     return (
         <div>
             <button
-                type="button"
+                disabled={loading}
+                type="submit"
                 className=" flex gap-x-3 focus:ring-2 focus:outline-none items-center border-2 border-gray-700 px-10 py-2 rounded-xl dark:focus:ring-gray-700  focus:ring-gray-700 font-medium"
+                onClick={handleGoogleLogin}
             >
                 <svg
                     className="w-4 h-4 mr-2 -ml-1"
@@ -25,8 +50,10 @@ export default function SocialRegister() {
                 <p>Continue with Google</p>
             </button>
             <button
-                type="button"
+                disabled={loading}
+                type="submit"
                 className="mt-5 flex gap-x-3 focus:ring-2 focus:outline-none items-center border-2 border-gray-700 px-8 py-2 rounded-xl dark:focus:ring-gray-700 focus:border-gray-700 font-medium focus:ring-gray-700"
+                onClick={handleFacebookLogin}
             >
                 <svg x="0px" y="0px" className="w-6 h-6" viewBox="0 0 24 24" fill="#fff;">
                     <path

@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -16,10 +17,10 @@ export default function RegisterInput() {
     async function register(e) {
         e.preventDefault();
 
+        // password validation
         if (password !== confirmPassword) {
             return setError('Password does not match');
         }
-
         try {
             setError('');
             setLoading(true);
