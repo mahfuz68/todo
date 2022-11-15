@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
     };
 
     // login with google
-    const loginWithGoogle = async () => {
+    async function loginWithGoogle () {
 
         const auth = getAuth();
         const provider = new GoogleAuthProvider();
@@ -53,7 +53,7 @@ export function AuthProvider({ children }) {
     }
 
     // login with facebook
-    const loginWithFacebook = async () => {
+    async function loginWithFacebook () {
         const auth = getAuth()
         const provider = new FacebookAuthProvider();
         await signInWithPopup(auth, provider);
@@ -61,7 +61,7 @@ export function AuthProvider({ children }) {
         setCurrentUser({ ...user });
     }
 
-
+    
     // login function
     const login = (email, password) => {
         const auth = getAuth();

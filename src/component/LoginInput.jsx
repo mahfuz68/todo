@@ -9,7 +9,8 @@ export default function LoginInput() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const { login } = useAuth();
+    const { login, currentUser } = useAuth();
+    console.log(currentUser);
 
     const navigate = useNavigate();
 

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.lef-nev {
+  @apply dark:text-gray-400 text-sm flex gap-x-6 font-medium items-center;
+}
+.right-nev {
+  @apply flex items-center gap-x-4;
+}

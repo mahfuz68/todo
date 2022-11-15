@@ -13,7 +13,7 @@ export default function SocialLogin() {
         setLoading(true);
         e.preventDefault();
         await loginWithGoogle();
-        navigate('/');
+        navigate('/dashboard');
     };
 
     // handle facebook login function
@@ -21,7 +21,7 @@ export default function SocialLogin() {
         setLoading(true);
         e.preventDefault();
         await loginWithFacebook();
-        navigate('/');
+        navigate('/dashboard');
     };
 
     return (

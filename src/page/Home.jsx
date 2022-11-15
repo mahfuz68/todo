@@ -1,8 +1,11 @@
 import React from 'react';
 import '../assets/css/Home.css';
 import HomeNavbar from '../component/HomeNavbar';
+import { useAuth } from '../context/AuthContext';
 
 export default function Home() {
+    const { currentUser } = useAuth();
+    console.log(currentUser?.displayName);
     return (
         <div className="h-screen w-full dark:bg-gray-900">
             <HomeNavbar />

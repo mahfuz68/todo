@@ -25,7 +25,7 @@ export default function RegisterInput() {
             setError('');
             setLoading(true);
             await signUp(email, password, userName);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             setError('register failed');
             setLoading(false);
