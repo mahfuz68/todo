@@ -47,6 +47,7 @@ export function AuthProvider({ children }) {
 
         const auth = getAuth();
         const provider = new GoogleAuthProvider();
+        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
         await signInWithPopup(auth, provider);
         const user = auth.currentUser;
         setCurrentUser({ ...user });    

@@ -11,10 +11,10 @@ import Register from './page/Register';
 function App() {
     const { currentUser } = useAuth();
     const user = () => {
-        if (currentUser !== '') {
+        if (currentUser !== null) {
             return currentUser;
         }
-        return undefined;
+        return 'no user found';
     };
     console.log(user());
 
@@ -29,7 +29,7 @@ function App() {
                         </PublicRoute>
                     }
                 />
-                {/* <Route /> */}
+
                 <Route
                     path="/login"
                     element={
