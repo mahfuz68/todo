@@ -10,15 +10,15 @@ export default function DashboardNavbar() {
     };
     return (
         <div className="dark:bg-gray-900">
-            <div className=" mx-12 py-3 flex justify-between ">
+            <div className="mx-12 h-16 flex justify-between shadow-lg">
                 <div className="lef-nev">
                     <NavLink
-                        className="flex gap-x-1 items-center dark:focus:text-white dark:hover:text-white"
+                        className="flex gap-x-1 items-center dark:focus:text-white dark:hover:text-white duration-300"
                         to="/dashboard"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-6 w-6"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -29,11 +29,11 @@ export default function DashboardNavbar() {
                     </NavLink>
                     <NavLink
                         className="flex gap-x-1 items-center dark:focus:text-white dark:hover:text-white"
-                        to="/dashboard"
+                        to="/collections"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-6 w-6"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -50,7 +50,7 @@ export default function DashboardNavbar() {
                 <div className="right-nev">
                     <button
                         type="button"
-                        className="px-1 py-1 rounded-lg bg-gray-500 bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500"
+                        className="px-1 py-1 rounded-lg bg-gray-500 bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 duration-300 transition"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -66,38 +66,16 @@ export default function DashboardNavbar() {
                         </svg>
                     </button>
                     <button type="button">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={3}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                            />
-                        </svg>
+                        <svg class="nk gs zq ns" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16666 3.33332C5.945 3.33332 3.33332 5.945 3.33332 9.16666C3.33332 12.3883 5.945 15 9.16666 15C12.3883 15 15 12.3883 15 9.16666C15 5.945 12.3883 3.33332 9.16666 3.33332ZM1.66666 9.16666C1.66666 5.02452 5.02452 1.66666 9.16666 1.66666C13.3088 1.66666 16.6667 5.02452 16.6667 9.16666C16.6667 13.3088 13.3088 16.6667 9.16666 16.6667C5.02452 16.6667 1.66666 13.3088 1.66666 9.16666Z" fill="white"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2857 13.2857C13.6112 12.9603 14.1388 12.9603 14.4642 13.2857L18.0892 16.9107C18.4147 17.2362 18.4147 17.7638 18.0892 18.0892C17.7638 18.4147 17.2362 18.4147 16.9107 18.0892L13.2857 14.4642C12.9603 14.1388 12.9603 13.6112 13.2857 13.2857Z" fill="white"></path>
+            </svg>
                     </button>
                     <button type="button">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                            />
-                        </svg>
+                        <svg id="Outline" viewBox="0 0 24 24" width="18" height="18" fill='white' xmlns="http://www.w3.org/2000/svg"><path d="M22.555,13.662l-1.9-6.836A9.321,9.321,0,0,0,2.576,7.3L1.105,13.915A5,5,0,0,0,5.986,20H7.1a5,5,0,0,0,9.8,0h.838a5,5,0,0,0,4.818-6.338ZM12,22a3,3,0,0,1-2.816-2h5.632A3,3,0,0,1,12,22Zm8.126-5.185A2.977,2.977,0,0,1,17.737,18H5.986a3,3,0,0,1-2.928-3.651l1.47-6.616a7.321,7.321,0,0,1,14.2-.372l1.9,6.836A2.977,2.977,0,0,1,20.126,16.815Z"/></svg>
                     </button>
-                    <button type="button" onClick={handleLogout}>
+                    <button className='flex gap-x-2' type="button" onClick={handleLogout}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" className='mt-[3.2px]' height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                         Logout
                     </button>
                 </div>

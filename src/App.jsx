@@ -3,6 +3,7 @@ import './assets/css/App.css';
 import PrivateRoute from './component/PrivateRoute';
 import PublicRoute from './component/PublicRoute';
 import { useAuth } from './context/AuthContext';
+import Collections from './page/Collections';
 import Dashboard from './page/Dashboard';
 import Home from './page/Home';
 import Login from './page/Login';
@@ -51,6 +52,14 @@ function App() {
                     element={
                         <PrivateRoute>
                             <Dashboard />
+                        </PrivateRoute>
+                    }
+                />
+                <Route
+                    path="/collections"
+                    element={
+                        <PrivateRoute>
+                            <Collections />
                         </PrivateRoute>
                     }
                 />

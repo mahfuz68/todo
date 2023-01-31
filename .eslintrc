@@ -40,8 +40,9 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es5",
+        "trailingComma": "es6",
         "singleQuote": true,
+        "parser": "flow",
         "printWidth": 100,
         "tabWidth": 4,
         "semi": true,
