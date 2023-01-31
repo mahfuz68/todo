@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import Loader from './Loader';
 
 export default function RegisterInput() {
     const [userName, setUserName] = useState('');
@@ -84,9 +85,10 @@ export default function RegisterInput() {
             <button
                 disabled={loading}
                 type="submit"
-                className="login-btn bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus: ring-indigo-600 "
+                className="login-btn bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus: ring-indigo-600 flex justify-center items-center"
                 onClick={register}
             >
+                {loading && <Loader/>}
                 Sign up
             </button>
             <div className="my-2 text-red-500 text-sm">{error && <p>{error}</p>}</div>
