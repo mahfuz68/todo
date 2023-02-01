@@ -7,6 +7,7 @@ import Collections from './page/Collections';
 import Dashboard from './page/Dashboard';
 import Home from './page/Home';
 import Login from './page/Login';
+import NotFound from './page/NotFound';
 import Register from './page/Register';
 
 function App() {
@@ -63,6 +64,9 @@ function App() {
                         </PrivateRoute>
                     }
                 />
+                <Route path='/*' element={<NotFound/>} />
+
+                
             </Routes>
         </div>
     );
