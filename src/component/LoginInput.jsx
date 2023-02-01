@@ -39,7 +39,9 @@ export default function LoginInput() {
           name="email"
           placeholder="Email"
           className="input-login"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
       </label>
       <label htmlFor="password">
@@ -47,7 +49,7 @@ export default function LoginInput() {
           type="password"
           name="password"
           placeholder="Password"
-          className="input-login"
+          className="input-login "
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -57,9 +59,9 @@ export default function LoginInput() {
         disabled={loading}
         type="submit"
         onClick={handleLogin}
-        className="login-btn bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus: ring-indigo-600 flex justify-center items-center"
+        className="login-btn bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus:ring-indigo-600 disabled:bg-gradient-to-l disabled:from-indigo-500 disabled:to-purple-500 flex justify-center items-center shadow-lg "
       >
-        {loading && <Loader/>}
+        {loading && <Loader />}
         Sign in
       </button>
       <div className="my-2 text-red-500 text-sm">{error && <p>{error}</p>}</div>

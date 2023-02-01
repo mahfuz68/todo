@@ -20,13 +20,10 @@ export default function NotFound() {
                 </h1>
               </div>
               <div className="mt-6">
-                <NavLink
-                  to="/"
-                  className="text-base flex justify-center "
-                >
+                <NavLink to="/" className="text-base flex justify-center ">
                   <button
                     type="button"
-                    className="py-1.5 px-3 rounded-xl focus:outline-none font-bold bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus: ring-indigo-600 flex justify-center items-center"
+                    className="py-1.5 px-3 rounded-xl focus:outline-none font-bold bg-gradient-to-r from-purple-500 to-pink-500  hover:bg-gradient-to-l hover:from-indigo-500 hover:to-purple-500 focus:ring-2 focus: ring-indigo-600 flex justify-center items-center shadow-lg"
                   >
                     Return Home
                   </button>

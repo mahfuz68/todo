@@ -31,29 +31,26 @@ export default function Collections() {
               <button
                 type="button"
                 className=" flex gap-x-3 focus:outline-none items-center border border-gray-700 px-3 py-1 rounded-xl focus:border-gray-700 font-medium focus:bg-gray-700"
-                
-            >
+              >
                 Favorites
-            </button>
+              </button>
               <button
                 type="button"
                 className="flex gap-x-3 focus:outline-none items-center border border-gray-700 px-3 py-1 rounded-xl focus:border-gray-700 font-medium focus:bg-gray-700"
-                
-            >
+              >
                 All Collections
-            </button>
+              </button>
             </div>
 
             <section className=" flex flex-wrap gap-x-7 gap-y-4">
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              <Collection/>
-              
+              <Collection />
+              <Collection />
+              <Collection />
+              <Collection />
+              <Collection />
+              <Collection />
+              <Collection />
+              <Collection />
             </section>
           </div>
         </div>
